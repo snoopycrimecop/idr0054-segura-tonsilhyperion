@@ -1,0 +1,59 @@
+---
+channels:
+    1:
+        label: CD206-168Er
+    2:
+        label: IL-21-164Dy
+    3:
+        label: CD185/CXCR5-171Yb
+    4:
+        label: CD45-154Sm
+    5:
+        label: CD123-148Nd
+    6:
+        label: CXCL13-157Gd
+    7:
+        label: CD1c/BDCA1-152Sm
+    8:
+        label: avanti-lipid
+    9:
+        label: Foxp3-162Dy
+    10:
+        label: CD45RA-155Gd
+    11:
+        label: Bcl6-163Dy
+    12:
+        label: CD324/E-Cadherin-158Gd
+    13:
+        label: CD44-153Eu
+    14:
+        label: HistoneH3-176Yb
+    15:
+        label: CTLA4-161Dy
+    16:
+        label: collagen14-173Yb
+    17:
+        label: CD279/PD-1-175Lu
+    18:
+        label: alphaSMA-141Pr
+    19:
+        label: CD8a-146Nd
+    20:
+        label: CD11c-159Tb
+    21:
+        label: CD19-169Tm
+    22:
+        label: Rutenium red
+    23:
+        label: DNA-191/193Ir
+    24:
+        label: Bcl2-166Er
+    25:
+        label: DNA-191/193Ir
+    26:
+        label: CD3-170Er
+    27:
+        label: CD14-156Gd
+    28:
+        label: Ki67-168Er
+version: 2

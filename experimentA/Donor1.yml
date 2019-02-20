@@ -1,0 +1,57 @@
+---
+channels:
+    1:
+        label: CD206-168Er
+    2:
+        label: IL-21-164Dy
+    3:
+        label: CD185/CXCR5-151Eu
+    4:
+        label: CD45-152Sm
+    5:
+        label: empty
+    6:
+        label: CXCL13-157Gd
+    7:
+        label: CD1c/BDCA1-biotin + Neutravidin-173Yb
+    8:
+        label: CD303/BDCA2-147Sm
+    9:
+        label: CD11b-149Sm
+    10:
+        label: CD45RA-155Gd
+    11:
+        label: Bcl6-163Dy
+    12:
+        label: CD324/E-Cadherin-158Gd
+    13:
+        label: CD141/BDCA3-165Ho
+    14:
+        label: CD123-143Nd
+    15:
+        label: CD68-171Yb
+    16:
+        label: HLA-DR-174Yb
+    17:
+        label: CD279/PD-1-175Lu
+    18:
+        label: alphaSMA-141Pr
+    19:
+        label: CD370/Clec9A-161Dy
+    20:
+        label: CD11c-159Tb
+    21:
+        label: CD19-169Tm
+    22:
+        label: ICOS-148Nd
+    23:
+        label: DNA-191/193Ir
+    24:
+        label: CD56-176Yb
+    25:
+        label: DNA-191/193Ir
+    26:
+        label: CD3-170Er
+    27:
+        label: CD14-156Gd
+version: 2
