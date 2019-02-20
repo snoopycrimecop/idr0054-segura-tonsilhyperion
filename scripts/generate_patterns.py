@@ -60,7 +60,11 @@ for name in images:
             color = "00FF00"
         else:
             color = "0000FF"
-        d['channels'][i + 1] = {'label': channels[i], 'color': color}
+        active = (i < 3)
+        d['channels'][i + 1] = {
+            'label': channels[i],
+            'color': color,
+            'active': active}
     with open(os.path.join(EXPERIMENT_DIRECTORY, name + ".yml"), 'w') as f:
         yaml.dump(d, f, explicit_start=True, width=80, indent=4,
                   default_flow_style=False)
