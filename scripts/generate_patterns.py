@@ -44,7 +44,7 @@ for image in IMAGES:
         os.mkdir(image_folder)
 
     pattern = "C_<"
-    for c in range(len(image['channel'])):
+    for c in range(len(image['channels'])):
         src = os.path.join(BASE_DIRECTORY, "%s%s.png" % (
             image['prefix'], image['channels'][c]))
         dest = os.path.join(image_folder, "C_%s.png" % c)
