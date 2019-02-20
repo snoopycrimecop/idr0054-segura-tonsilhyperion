@@ -11,7 +11,7 @@ METADATA_DIRECTORY = os.path.join(
         sys.argv[0]))), 'experimentA', 'patterns')
 UOD_METADATA_DIRECTORY = os.path.join(
     "/uod/idr/metadata/idr0054-segura-tonsilhyperion", "experimentA",
-    "pattern")
+    "patterns")
 IMAGES = {'Donor1': 'd1 normalized_'}
 CHANNELS = [
     'CD206', 'IL-21', 'CD185(CXCR5)', 'CD45', 'empty', 'CXCL13',
