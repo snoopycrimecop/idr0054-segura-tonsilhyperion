@@ -52,7 +52,7 @@ for name in images:
         f.write(pattern_fullpath + "\n")
 
     # Rendering files
-    d = {'version': 2, 'channels': {}}
+    d = {'version': 2, 'channels': {}, 'greyscale': False}
     for i in range(len(files)):
         if (i % 3) == 0:
             color = "FF0000"
@@ -66,7 +66,7 @@ for name in images:
                   default_flow_style=False)
 
 with open(os.path.join(
-    EXPERIMENT_DIRECTORY, "idr0054-experimentA-filePaths.tsv"), 'w') as f:
+        EXPERIMENT_DIRECTORY, "idr0054-experimentA-filePaths.tsv"), 'w') as f:
     for name in images:
         pattern_file = os.path.join(UOD_METADATA_DIRECTORY, name + ".pattern")
         f.write("Dataset:name:%s\t%s\n" % (name, pattern_file))

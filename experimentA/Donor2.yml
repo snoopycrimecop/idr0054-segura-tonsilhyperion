@@ -81,4 +81,5 @@ channels:
     27:
         color: 0000FF
         label: CD14-156Gd
+greyscale: false
 version: 2
