@@ -9,6 +9,9 @@ BASE_DIRECTORY = "/nfs/bioimage/drop/idr0054-segura-tonsilhyperion/S-BSST221/"
 METADATA_DIRECTORY = os.path.join(
     os.path.dirname(os.path.abspath(os.path.dirname(
         sys.argv[0]))), 'experimentA', 'patterns')
+UOD_METADATA_DIRECTORY = os.path.join(
+    "/uod/idr/metadata/idr0054-segura-tonsilhyperion", "experimentA",
+    "pattern")
 IMAGES = {'Donor1': 'd1 normalized_'}
 CHANNELS = [
     'CD206', 'IL-21', 'CD185(CXCR5)', 'CD45', 'empty', 'CXCL13',
@@ -23,7 +26,7 @@ for name, prefix in IMAGES.iteritems():
     if not os.path.exists(image_folder):
         os.mkdir(image_folder)
 
-    pattern = "%s/C_<" % name
+    pattern = "C_<"
     for c in range(len(CHANNELS)):
         src = os.path.join(BASE_DIRECTORY, "%s%s.png" % (prefix, CHANNELS[c]))
         dest = os.path.join(image_folder, "C_%s.png" % c)
@@ -35,6 +38,7 @@ for name, prefix in IMAGES.iteritems():
         else:
             pattern += ",%s" % c
     pattern += ">.png"
+    abspath_pattern = os.path.join(UOD_METADATA_DIRECTORY, name, pattern)
 
     with open(image_folder + ".pattern", "w") as f:
-        f.write(pattern)
+        f.write(abspath_pattern)
