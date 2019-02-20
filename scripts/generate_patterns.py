@@ -51,6 +51,7 @@ for name in images:
     with open(image_folder + ".pattern", "w") as f:
         f.write(pattern_fullpath + "\n")
 
+    # Rendering files
     d = {'version': 2, 'channels': {}}
     for i in range(len(files)):
         if (i % 3) == 0:
@@ -63,3 +64,9 @@ for name in images:
     with open(os.path.join(EXPERIMENT_DIRECTORY, name + ".yml"), 'w') as f:
         yaml.dump(d, f, explicit_start=True, width=80, indent=4,
                   default_flow_style=False)
+
+with open(os.path.join(
+    EXPERIMENT_DIRECTORY, "idr0054-experimentA-filePaths.tsv"), 'w') as f:
+    for name in images:
+        pattern_file = os.path.join(UOD_METADATA_DIRECTORY, name + ".pattern")
+        f.write("Dataset:name:%s\t%s\n" % (name, pattern_file))
