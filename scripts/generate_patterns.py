@@ -45,11 +45,11 @@ for name in images:
         dest = os.path.join(image_folder, "%s_C%s.png" % (name, "%02d" % i))
         if not os.path.islink(dest):
             os.symlink(src, dest)
-    pattern_filename = "%s_C<00-%s>.png" % (name, len(files))
+    pattern_filename = "%s_C<00-%s>.png" % (name, len(files) - 1)
     pattern_fullpath = os.path.join(
         UOD_METADATA_DIRECTORY, name, pattern_filename)
     with open(image_folder + ".pattern", "w") as f:
-        f.write(pattern_fullpath)
+        f.write(pattern_fullpath + "\n")
 
     d = {'version': 2, 'channels': {}}
     for i in range(len(files)):
