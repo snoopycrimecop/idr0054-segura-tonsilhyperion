@@ -53,7 +53,13 @@ for name in images:
 
     d = {'version': 2, 'channels': {}}
     for i in range(len(files)):
-        d['channels'][i + 1] = {'label': channels[i]}
+        if (i % 3) == 0:
+            color = "FF0000"
+        elif (i % 3) == 1:
+            color = "00FF00"
+        else:
+            color = "0000FF"
+        d['channels'][i + 1] = {'label': channels[i], 'color': color}
     with open(os.path.join(EXPERIMENT_DIRECTORY, name + ".yml"), 'w') as f:
         yaml.dump(d, f, explicit_start=True, width=80, indent=4,
                   default_flow_style=False)
