@@ -1,59 +1,84 @@
 ---
 channels:
     1:
-        label: CD206-168Er
-    2:
+        color: FF0000
         label: IL-21-164Dy
-    3:
+    2:
+        color: 00FF00
         label: CD185/CXCR5-171Yb
-    4:
+    3:
+        color: 0000FF
         label: CD45-154Sm
-    5:
+    4:
+        color: FF0000
         label: CD123-148Nd
-    6:
+    5:
+        color: 00FF00
         label: CXCL13-157Gd
-    7:
+    6:
+        color: 0000FF
         label: CD1c/BDCA1-152Sm
-    8:
+    7:
+        color: FF0000
         label: avanti-lipid
-    9:
+    8:
+        color: 00FF00
         label: Foxp3-162Dy
-    10:
+    9:
+        color: 0000FF
         label: CD45RA-155Gd
-    11:
+    10:
+        color: FF0000
         label: Bcl6-163Dy
-    12:
+    11:
+        color: 00FF00
         label: CD324/E-Cadherin-158Gd
-    13:
+    12:
+        color: 0000FF
         label: CD44-153Eu
-    14:
+    13:
+        color: FF0000
         label: HistoneH3-176Yb
-    15:
+    14:
+        color: 00FF00
         label: CTLA4-161Dy
-    16:
+    15:
+        color: 0000FF
         label: collagen14-173Yb
-    17:
+    16:
+        color: FF0000
         label: CD279/PD-1-175Lu
-    18:
+    17:
+        color: 00FF00
         label: alphaSMA-141Pr
-    19:
+    18:
+        color: 0000FF
         label: CD8a-146Nd
-    20:
+    19:
+        color: FF0000
         label: CD11c-159Tb
-    21:
+    20:
+        color: 00FF00
         label: CD19-169Tm
-    22:
+    21:
+        color: 0000FF
         label: Rutenium red
+    22:
+        color: FF0000
+        label: DNA-191/193Ir
     23:
-        label: DNA-191/193Ir
-    24:
+        color: 00FF00
         label: Bcl2-166Er
-    25:
+    24:
+        color: 0000FF
         label: DNA-191/193Ir
-    26:
+    25:
+        color: FF0000
         label: CD3-170Er
-    27:
+    26:
+        color: 00FF00
         label: CD14-156Gd
-    28:
+    27:
+        color: 0000FF
         label: Ki67-168Er
 version: 2

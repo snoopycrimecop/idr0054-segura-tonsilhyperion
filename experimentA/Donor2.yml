@@ -1,57 +1,84 @@
 ---
 channels:
     1:
+        color: FF0000
         label: CD206-168Er
     2:
+        color: 00FF00
         label: IL-21-164Dy
     3:
+        color: 0000FF
         label: CD185/CXCR5-151Eu
     4:
+        color: FF0000
         label: CD45-152Sm
     5:
+        color: 00FF00
         label: empty
     6:
+        color: 0000FF
         label: CXCL13-157Gd
     7:
+        color: FF0000
         label: CD1c/BDCA1-biotin + Neutravidin-173Yb
     8:
+        color: 00FF00
         label: CD303/BDCA2-147Sm
     9:
+        color: 0000FF
         label: CD11b-149Sm
     10:
+        color: FF0000
         label: CD45RA-155Gd
     11:
+        color: 00FF00
         label: Bcl6-163Dy
     12:
+        color: 0000FF
         label: CD324/E-Cadherin-158Gd
     13:
+        color: FF0000
         label: CD141/BDCA3-165Ho
     14:
+        color: 00FF00
         label: CD123-143Nd
     15:
+        color: 0000FF
         label: CD68-171Yb
     16:
+        color: FF0000
         label: HLA-DR-174Yb
     17:
+        color: 00FF00
         label: CD279/PD-1-175Lu
     18:
+        color: 0000FF
         label: alphaSMA-141Pr
     19:
+        color: FF0000
         label: CD370/Clec9A-161Dy
     20:
+        color: 00FF00
         label: CD11c-159Tb
     21:
+        color: 0000FF
         label: CD19-169Tm
     22:
+        color: FF0000
         label: ICOS-148Nd
     23:
+        color: 00FF00
         label: DNA-191/193Ir
     24:
+        color: 0000FF
         label: CD56-176Yb
     25:
+        color: FF0000
         label: DNA-191/193Ir
     26:
+        color: 00FF00
         label: CD3-170Er
     27:
+        color: 0000FF
         label: CD14-156Gd
 version: 2
