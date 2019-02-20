@@ -5,6 +5,7 @@
 import csv
 import os.path
 import sys
+import yaml
 
 BASE_DIRECTORY = "/nfs/bioimage/drop/idr0054-segura-tonsilhyperion/S-BSST221/"
 EXPERIMENT_DIRECTORY = os.path.join(
@@ -17,23 +18,28 @@ UOD_METADATA_DIRECTORY = os.path.join(
     "/uod/idr/metadata/idr0054-segura-tonsilhyperion", "experimentA",
     "patterns")
 
+# Read image from assays
 images = {}
 with open(ASSAYS_FILE, 'r') as f:
     f_csv = csv.reader(f, delimiter='\t')
-    headers = next(f_csv)
+    headers = next(f_csv)  # First row is header
     for row in f_csv:
         if row[0] not in images.keys():
             images[row[0]] = {'files': [], 'channels': []}
         images[row[0]]['files'].append(row[16])
-        images[row[0]]['channels'].append(row[20])
+        images[row[0]]['channels'].append(row[20].rstrip())
 
 for name in images:
+    files = images[name]['files']
+    channels = images[name]['channels']
+
+    # Symlink original images under experimentA/patterns
     image_folder = os.path.join(PATTERNS_DIRECTORY, name)
     if not os.path.exists(image_folder):
         os.mkdir(image_folder)
 
+    # Generate pattern file
     pattern = "C_<"
-    files = images[name]['files']
     for i in range(len(files)):
         src = os.path.join(BASE_DIRECTORY, files[i])
         dest = os.path.join(image_folder, "C_%s.png" % i)
@@ -42,6 +48,12 @@ for name in images:
     pattern_filename = "C_<" + ",".join(map(str, range(len(files)))) + ">.png"
     pattern_fullpath = os.path.join(
         UOD_METADATA_DIRECTORY, name, pattern_filename)
-
     with open(image_folder + ".pattern", "w") as f:
         f.write(pattern_fullpath)
+
+    d = {'version': 2, 'channels': {}}
+    for i in range(len(files)):
+        d['channels'][i + 1] = {'label': channels[i]}
+    with open(os.path.join(EXPERIMENT_DIRECTORY, name + ".yml"), 'w') as f:
+        yaml.dump(d, f, explicit_start=True, width=80, indent=4,
+                  default_flow_style=False)
