@@ -42,10 +42,10 @@ for name in images:
     pattern = "C_<"
     for i in range(len(files)):
         src = os.path.join(BASE_DIRECTORY, files[i])
-        dest = os.path.join(image_folder, "C_%s.png" % i)
+        dest = os.path.join(image_folder, "%s_C%s.png" % (name, "%02d" % i))
         if not os.path.islink(dest):
             os.symlink(src, dest)
-    pattern_filename = "C_<" + ",".join(map(str, range(len(files)))) + ">.png"
+    pattern_filename = "%s_C<00-%s>.png" % (name, len(files))
     pattern_fullpath = os.path.join(
         UOD_METADATA_DIRECTORY, name, pattern_filename)
     with open(image_folder + ".pattern", "w") as f:
