@@ -7,7 +7,7 @@ import os.path
 import sys
 import yaml
 
-BASE_DIRECTORY = "/nfs/bioimage/drop/idr0054-segura-tonsilhyperion/S-BSST221/"
+BASE_DIRECTORY = "/uod/idr/filesets/idr0054-segura-tonsilhyperion/S-BSST221/"
 EXPERIMENT_DIRECTORY = os.path.join(
     os.path.dirname(os.path.abspath(os.path.dirname(
         sys.argv[0]))), 'experimentA')
