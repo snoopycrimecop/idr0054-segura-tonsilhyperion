@@ -73,4 +73,4 @@ with open(os.path.join(
         EXPERIMENT_DIRECTORY, "idr0054-experimentA-filePaths.tsv"), 'w') as f:
     for name in images:
         pattern_file = os.path.join(UOD_METADATA_DIRECTORY, name + ".pattern")
-        f.write("Dataset:name:%s\t%s\n" % (name, pattern_file))
+        f.write("Dataset:name:Tonsil\t%s\n" % pattern_file)
