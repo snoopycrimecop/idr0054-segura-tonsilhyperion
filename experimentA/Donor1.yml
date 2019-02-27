@@ -1,0 +1,112 @@
+---
+channels:
+    1:
+        active: true
+        color: FF0000
+        label: CD206-168Er
+    2:
+        active: true
+        color: 00FF00
+        label: IL-21-164Dy
+    3:
+        active: true
+        color: 0000FF
+        label: CD185/CXCR5-151Eu
+    4:
+        active: false
+        color: FF0000
+        label: CD45-152Sm
+    5:
+        active: false
+        color: 00FF00
+        label: empty
+    6:
+        active: false
+        color: 0000FF
+        label: CXCL13-157Gd
+    7:
+        active: false
+        color: FF0000
+        label: CD1c/BDCA1-biotin + Neutravidin-173Yb
+    8:
+        active: false
+        color: 00FF00
+        label: CD303/BDCA2-147Sm
+    9:
+        active: false
+        color: 0000FF
+        label: CD11b-149Sm
+    10:
+        active: false
+        color: FF0000
+        label: CD45RA-155Gd
+    11:
+        active: false
+        color: 00FF00
+        label: Bcl6-163Dy
+    12:
+        active: false
+        color: 0000FF
+        label: CD324/E-Cadherin-158Gd
+    13:
+        active: false
+        color: FF0000
+        label: CD141/BDCA3-165Ho
+    14:
+        active: false
+        color: 00FF00
+        label: CD123-143Nd
+    15:
+        active: false
+        color: 0000FF
+        label: CD68-171Yb
+    16:
+        active: false
+        color: FF0000
+        label: HLA-DR-174Yb
+    17:
+        active: false
+        color: 00FF00
+        label: CD279/PD-1-175Lu
+    18:
+        active: false
+        color: 0000FF
+        label: alphaSMA-141Pr
+    19:
+        active: false
+        color: FF0000
+        label: CD370/Clec9A-161Dy
+    20:
+        active: false
+        color: 00FF00
+        label: CD11c-159Tb
+    21:
+        active: false
+        color: 0000FF
+        label: CD19-169Tm
+    22:
+        active: false
+        color: FF0000
+        label: ICOS-148Nd
+    23:
+        active: false
+        color: 00FF00
+        label: DNA-191/193Ir
+    24:
+        active: false
+        color: 0000FF
+        label: CD56-176Yb
+    25:
+        active: false
+        color: FF0000
+        label: DNA-191/193Ir
+    26:
+        active: false
+        color: 00FF00
+        label: CD3-170Er
+    27:
+        active: false
+        color: 0000FF
+        label: CD14-156Gd
+greyscale: false
+version: 2
