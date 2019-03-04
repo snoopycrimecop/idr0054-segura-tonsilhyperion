@@ -34,7 +34,7 @@ with open(assays_file, 'r') as f:
 FIRST_CHANNELS = ["CD3-170Er", "CD19-169Tm", "CD324/E-Cadherin-158Gd"]
 for name in images:
     for channel in reversed(FIRST_CHANNELS):
-        index = images[name]['channel'].index(channel)
+        index = images[name]['channels'].index(channel)
         images[name]['files'].insert(0, images[name]['files'].pop(index))
         images[name]['channels'].insert(0, images[name]['files'].pop(index))
 
