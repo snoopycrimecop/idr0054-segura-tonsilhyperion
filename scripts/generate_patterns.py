@@ -11,16 +11,16 @@ BASE_DIRECTORY = "/uod/idr/filesets/idr0054-segura-tonsilhyperion/S-BSST221/"
 EXPERIMENT_DIRECTORY = os.path.join(
     os.path.dirname(os.path.abspath(os.path.dirname(
         sys.argv[0]))), 'experimentA')
-PATTERNS_DIRECTORY = os.path.join(EXPERIMENT_DIRECTORY, 'patterns')
-ASSAYS_FILE = os.path.join(
-    EXPERIMENT_DIRECTORY, 'idr0054-experimentA-assays.txt')
-UOD_METADATA_DIRECTORY = os.path.join(
+LOCAL_PATTERNS_DIRECTORY = os.path.join(EXPERIMENT_DIRECTORY, 'patterns')
+IDR_PATTERNS_DIRECTORY = os.path.join(
     "/uod/idr/metadata/idr0054-segura-tonsilhyperion", "experimentA",
     "patterns")
 
-# Read image from assays
+# Read list of constituent PNGs for the three images from submitted assays file
 images = {}
-with open(ASSAYS_FILE, 'r') as f:
+assays_file = os.path.join(
+    EXPERIMENT_DIRECTORY, 'idr0054-experimentA-assays.txt')
+with open(assays_file, 'r') as f:
     f_csv = csv.reader(f, delimiter='\t')
     headers = next(f_csv)  # First row is header
     for row in f_csv:
@@ -44,7 +44,7 @@ for name in images:
     channels = images[name]['channels']
 
     # Symlink original images under experimentA/patterns
-    image_folder = os.path.join(PATTERNS_DIRECTORY, name)
+    image_folder = os.path.join(LOCAL_PATTERNS_DIRECTORY, name)
     if not os.path.exists(image_folder):
         os.mkdir(image_folder)
 
@@ -57,7 +57,7 @@ for name in images:
             os.symlink(src, dest)
     pattern_filename = "%s_C<00-%s>.png" % (name, len(files) - 1)
     pattern_fullpath = os.path.join(
-        UOD_METADATA_DIRECTORY, name, pattern_filename)
+        IDR_PATTERNS_DIRECTORY, name, pattern_filename)
     with open(image_folder + ".pattern", "w") as f:
         f.write(pattern_fullpath + "\n")
 
@@ -81,6 +81,10 @@ for name in images:
 
 with open(os.path.join(
         EXPERIMENT_DIRECTORY, "idr0054-experimentA-filePaths.tsv"), 'w') as f:
-    for name in images:
-        pattern_file = os.path.join(UOD_METADATA_DIRECTORY, name + ".pattern")
-        f.write("Dataset:name:Tonsil\t%s\n" % pattern_file)
+    for name in sorted(images):
+        pattern_file = os.path.join(IDR_PATTERNS_DIRECTORY, name + ".pattern")
+        index = name[5]
+        if index == "A":
+            index = 3
+
+        f.write("Dataset:name:Tonsil\t%s\tTonsil %s\n" % (pattern_file, index))
