@@ -29,6 +29,16 @@ with open(ASSAYS_FILE, 'r') as f:
         images[row[0]]['files'].append(row[16])
         images[row[0]]['channels'].append(row[20].rstrip())
 
+
+# Move active channels to the first positions
+FIRST_CHANNELS = ["CD3-170Er", "CD19-169Tm", "CD324/E-Cadherin-158Gd"]
+for name in images:
+    for channel in reversed(FIRST_CHANNELS):
+        index = images[name]['channel'].index(channel)
+        images[name]['files'].insert(0, images[name]['files'].pop(index))
+        images[name]['channels'].insert(0, images[name]['files'].pop(index))
+
+
 for name in images:
     files = images[name]['files']
     channels = images[name]['channels']
