@@ -3,103 +3,103 @@ channels:
     1:
         active: true
         color: FF0000
-        label: IL-21-164Dy
+        label: CD3-170Er
     2:
         active: true
         color: 00FF00
-        label: CD185/CXCR5-171Yb
+        label: CD19-169Tm
     3:
         active: true
         color: 0000FF
-        label: CD45-154Sm
+        label: CD324/E-Cadherin-158Gd
     4:
         active: false
         color: FF0000
-        label: CD123-148Nd
+        label: IL-21-164Dy
     5:
         active: false
         color: 00FF00
-        label: CXCL13-157Gd
+        label: CD185/CXCR5-171Yb
     6:
         active: false
         color: 0000FF
-        label: CD1c/BDCA1-152Sm
+        label: CD45-154Sm
     7:
         active: false
         color: FF0000
-        label: avanti-lipid
+        label: CD123-148Nd
     8:
         active: false
         color: 00FF00
-        label: Foxp3-162Dy
+        label: CXCL13-157Gd
     9:
         active: false
         color: 0000FF
-        label: CD45RA-155Gd
+        label: CD1c/BDCA1-152Sm
     10:
         active: false
         color: FF0000
-        label: Bcl6-163Dy
+        label: avanti-lipid
     11:
         active: false
         color: 00FF00
-        label: CD324/E-Cadherin-158Gd
+        label: Foxp3-162Dy
     12:
         active: false
         color: 0000FF
-        label: CD44-153Eu
+        label: CD45RA-155Gd
     13:
         active: false
         color: FF0000
-        label: HistoneH3-176Yb
+        label: Bcl6-163Dy
     14:
         active: false
         color: 00FF00
-        label: CTLA4-161Dy
+        label: CD44-153Eu
     15:
         active: false
         color: 0000FF
-        label: collagen14-173Yb
+        label: HistoneH3-176Yb
     16:
         active: false
         color: FF0000
-        label: CD279/PD-1-175Lu
+        label: CTLA4-161Dy
     17:
         active: false
         color: 00FF00
-        label: alphaSMA-141Pr
+        label: collagen14-173Yb
     18:
         active: false
         color: 0000FF
-        label: CD8a-146Nd
+        label: CD279/PD-1-175Lu
     19:
         active: false
         color: FF0000
-        label: CD11c-159Tb
+        label: alphaSMA-141Pr
     20:
         active: false
         color: 00FF00
-        label: CD19-169Tm
+        label: CD8a-146Nd
     21:
         active: false
         color: 0000FF
-        label: Rutenium red
+        label: CD11c-159Tb
     22:
         active: false
         color: FF0000
-        label: DNA-191/193Ir
+        label: Rutenium red
     23:
         active: false
         color: 00FF00
-        label: Bcl2-166Er
+        label: DNA-191/193Ir
     24:
         active: false
         color: 0000FF
-        label: DNA-191/193Ir
+        label: Bcl2-166Er
     25:
         active: false
         color: FF0000
-        label: CD3-170Er
+        label: DNA-191/193Ir
     26:
         active: false
         color: 00FF00
