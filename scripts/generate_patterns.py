@@ -36,7 +36,7 @@ for name in images:
     for channel in reversed(FIRST_CHANNELS):
         index = images[name]['channels'].index(channel)
         images[name]['files'].insert(0, images[name]['files'].pop(index))
-        images[name]['channels'].insert(0, images[name]['files'].pop(index))
+        images[name]['channels'].insert(0, images[name]['channels'].pop(index))
 
 
 for name in images:
