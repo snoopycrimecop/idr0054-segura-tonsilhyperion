@@ -31,9 +31,19 @@ with open(assays_file, 'r') as f:
 
 
 # Move active channels to the first positions
-FIRST_CHANNELS = ["CD3-170Er", "CD19-169Tm", "CD324/E-Cadherin-158Gd"]
+FIRST_CHANNELS = {
+    "Donor1": ["CD3-170Er", "CD19-169Tm", "CD324/E-Cadherin-158Gd",
+               "CD206-168Er", "Bcl6-163Dy", "CD141/BDCA3-165Ho",
+               "alphaSMA-141Pr"],
+    "Donor2": ["CD3-170Er", "CD19-169Tm", "CD324/E-Cadherin-158Gd",
+               "CD206-168Er", "Bcl6-163Dy", "CD141/BDCA3-165Ho",
+               "alphaSMA-141Pr"],
+    "DonorA": ["CD3-170Er", "CD19-169Tm", "CD324/E-Cadherin-158Gd",
+               "HistoneH3-176Yb", "collagen14-173Yb", "CD279/PD-1-175Lu",
+               "alphaSMA-141Pr"]
+     }
 for name in images:
-    for channel in reversed(FIRST_CHANNELS):
+    for channel in reversed(FIRST_CHANNELS[name]):
         index = images[name]['channels'].index(channel)
         images[name]['files'].insert(0, images[name]['files'].pop(index))
         images[name]['channels'].insert(0, images[name]['channels'].pop(index))
