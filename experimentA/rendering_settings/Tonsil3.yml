@@ -43,4 +43,67 @@ channels:
     active: true
     start: 50
     end: 255
+  8:
+    active: false
+    label: CD206-168Er
+  9:
+    active: false
+    label: IL-21-164Dy
+  10:
+    active: false
+    label: CD185/CXCR5-171Yb
+  11:
+    active: false
+    label: CD45-154Sm
+  12:
+    active: false
+    label: CD123-148Nd
+  13:
+    active: false
+    label: CXCL13-157Gd
+  14:
+    active: false
+    label: CD1c/BDCA1-152Sm
+  15:
+    active: false
+    label: avanti-lipid
+  16:
+    active: false
+    label: Foxp3-162Dy
+  17:
+    active: false
+    label: CD45RA-155Gd
+  18:
+    active: false
+    label: Bcl6-163Dy
+  19:
+    active: false
+    label: CD44-153Eu
+  20:
+    active: false
+    label: CTLA4-161Dy
+  21:
+    active: false
+    label: CD8a-146Nd
+  22:
+    active: false
+    label: CD11c-159Tb
+  23:
+    active: false
+    label: Rutenium red
+  24:
+    active: false
+    label: DNA-191/193Ir
+  25:
+    active: false
+    label: Bcl2-166Er
+  26:
+    active: false
+    label: DNA-191/193Ir
+  27:
+    active: false
+    label: CD14-156Gd
+  28:
+    active: false
+    label: Ki67-168Er
 greyscale: false

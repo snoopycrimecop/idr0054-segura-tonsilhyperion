@@ -43,4 +43,64 @@ channels:
     active: true
     start: 0
     end: 255
+  8:
+    active: false
+    label: IL-21-164Dy
+  9:
+    active: false
+    label: CD185/CXCR5-151Eu
+  10:
+    active: false
+    label: CD45-152Sm
+  11:
+    active: false
+    label: empty
+  12:
+    active: false
+    label: CXCL13-157Gd
+  13:
+    active: false
+    label: CD1c/BDCA1-biotin + Neutravidin-173Yb
+  14:
+    active: false
+    label: CD303/BDCA2-147Sm
+  15:
+    active: false
+    label: CD11b-149Sm
+  16:
+    active: false
+    label: CD45RA-155Gd
+  17:
+    active: false
+    label: CD123-143Nd
+  18:
+    active: false
+    label: CD68-171Yb
+  19:
+    active: false
+    label: HLA-DR-174Yb
+  20:
+    active: false
+    label: CD279/PD-1-175Lu
+  21:
+    active: false
+    label: CD370/Clec9A-161Dy
+  22:
+    active: false
+    label: CD11c-159Tb
+  23:
+    active: false
+    label: ICOS-148Nd
+  24:
+    active: false
+    label: DNA-191/193Ir
+  25:
+    active: false
+    label: CD56-176Yb
+  26:
+    active: false
+    label: DNA-191/193Ir
+  27:
+    active: false
+    label: CD14-156Gd
 greyscale: false
