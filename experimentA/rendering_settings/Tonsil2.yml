@@ -5,41 +5,41 @@ channels:
     label: CD3-170Er
     color: FF0000
     active: true
-    min: 0
-    max: 255
+    start: 0
+    end: 255
   2:
     label: CD19-169Tm
     color: 00FF00
     active: true
-    min: 0
-    max: 255
+    start: 0
+    end: 255
   3:
     label: CD324/E-Cadherin-158Gd
     color: 0000FF
     active: true
-    min: 0
-    max: 150
+    start: 0
+    end: 150
   4:
     label: CD206-168Er
     color: 00FFFF
     active: true
-    min: 0
-    max: 1
+    start: 0
+    end: 1
   5:
     label: Bcl6-163Dy
     color: FF00FF
     active: true
-    min: 0
-    max: 1
+    start: 0
+    end: 1
   6:
     label: CD141/BDCA3-165Ho
     color: FFFF00
     active: true
-    min: 0
-    max: 1
+    start: 0
+    end: 1
   7:
     label: alphaSMA-141Pr
     color: FFFFFF
     active: true
-    min: 50
-    max: 255
+    start: 50
+    end: 255
