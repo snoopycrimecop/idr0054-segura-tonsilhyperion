@@ -43,3 +43,4 @@ channels:
     active: true
     start: 50
     end: 255
+greyscale: false
