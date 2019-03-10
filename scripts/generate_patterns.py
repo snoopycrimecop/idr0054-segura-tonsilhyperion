@@ -14,6 +14,7 @@ LOCAL_PATTERNS_DIRECTORY = os.path.join(EXPERIMENT_DIRECTORY, 'patterns')
 IDR_PATTERNS_DIRECTORY = os.path.join(
     "/uod/idr/metadata/idr0054-segura-tonsilhyperion", "experimentA",
     "patterns")
+SIZEC = 27
 
 # Read image names and channels from annotation CSV file
 images = {}
@@ -23,9 +24,11 @@ with open(annotation_file, 'r') as f:
     f_csv = csv.reader(f, delimiter=',')
     headers = next(f_csv)  # First row is header
     for row in f_csv:
+        name = row[0]
         channels = [x.strip() for x in row[-1].split(',')]
-        files = ['' for i in range(len(channels))]
-        images[row[0]] = {'files': files, 'channels': channels}
+        assert len(channels) == SIZEC, 'Found %s channels' % len(channels)
+        files = ['' for i in range(SIZEC)]
+        images[name] = {'files': files, 'channels': channels}
 
 # Read mapping between channels and files on disk from assays file
 assays_file = os.path.join(
