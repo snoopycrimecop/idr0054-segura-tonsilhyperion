@@ -84,8 +84,4 @@ with open(os.path.join(
         EXPERIMENT_DIRECTORY, "idr0054-experimentA-filePaths.tsv"), 'w') as f:
     for name in sorted(images):
         pattern_file = os.path.join(IDR_PATTERNS_DIRECTORY, name + ".pattern")
-        index = name[5]
-        if index == "A":
-            index = 3
-
-        f.write("Dataset:name:Tonsil\t%s\tTonsil %s\n" % (pattern_file, index))
+        f.write("Dataset:name:Tonsil\t%s\tTonsil %s\n" % (pattern_file, name))
