@@ -5,6 +5,7 @@
 import csv
 import os.path
 import sys
+import yaml
 
 BASE_DIRECTORY = "/uod/idr/filesets/idr0054-segura-tonsilhyperion/S-BSST221/"
 EXPERIMENT_DIRECTORY = os.path.join(
@@ -66,6 +67,18 @@ for name in images:
         IDR_PATTERNS_DIRECTORY, name, pattern_filename)
     with open(image_folder + ".pattern", "w") as f:
         f.write(pattern_fullpath + "\n")
+
+    # Check rendering file
+    rendering_file = os.path.join(
+        EXPERIMENT_DIRECTORY, 'rendering_settings', name + '.yml')
+    with open(rendering_file, 'r') as f:
+        d = yaml.load(f)
+        assert d['version'] == 2
+        assert d['greyscale'] is False
+        assert d['channels'].keys() == [i + 1 for i in range(SIZEC)]
+        for i in range(SIZEC):
+            assert d['channels'][i + 1]['label'] == channels[i]
+            assert d['channels'][i + 1]['active'] is (i < 7)
 
 with open(os.path.join(
         EXPERIMENT_DIRECTORY, "idr0054-experimentA-filePaths.tsv"), 'w') as f:
