@@ -93,13 +93,13 @@ channels:
     label: ICOS-148Nd
   24:
     active: false
-    label: DNA-191/193Ir
+    label: DNA1-191/193Ir
   25:
     active: false
     label: CD56-176Yb
   26:
     active: false
-    label: DNA-191/193Ir
+    label: DNA2-191/193Ir
   27:
     active: false
     label: CD14-156Gd
