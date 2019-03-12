@@ -5,6 +5,7 @@
 import csv
 import os.path
 import sys
+import yaml
 
 BASE_DIRECTORY = "/uod/idr/filesets/idr0054-segura-tonsilhyperion/S-BSST221/"
 EXPERIMENT_DIRECTORY = os.path.join(
@@ -14,39 +15,36 @@ LOCAL_PATTERNS_DIRECTORY = os.path.join(EXPERIMENT_DIRECTORY, 'patterns')
 IDR_PATTERNS_DIRECTORY = os.path.join(
     "/uod/idr/metadata/idr0054-segura-tonsilhyperion", "experimentA",
     "patterns")
+SIZEC = 27
 
-# Read list of constituent PNGs for the three images from submitted assays file
+# Read image names and channels from annotation CSV file
 images = {}
+annotation_file = os.path.join(
+    EXPERIMENT_DIRECTORY, 'idr0054-experimentA-annotation.csv')
+with open(annotation_file, 'r') as f:
+    f_csv = csv.reader(f, delimiter=',')
+    headers = next(f_csv)  # First row is header
+    for row in f_csv:
+        name = row[0]
+        channels = [x.strip() for x in row[-1].split(',')]
+        assert len(channels) == SIZEC, 'Found %s channels' % len(channels)
+        files = ['' for i in range(SIZEC)]
+        images[name] = {'files': files, 'channels': channels}
+
+# Read mapping between channels and files on disk from assays file
 assays_file = os.path.join(
     EXPERIMENT_DIRECTORY, 'idr0054-experimentA-assays.txt')
+MAPPING = {
+    'Donor1': 'Tonsil 1',
+    'Donor2': 'Tonsil 2',
+    'DonorA': 'Tonsil 3'}
 with open(assays_file, 'r') as f:
     f_csv = csv.reader(f, delimiter='\t')
     headers = next(f_csv)  # First row is header
     for row in f_csv:
-        if row[0] not in images.keys():
-            images[row[0]] = {'files': [], 'channels': []}
-        images[row[0]]['files'].append(row[16])
-        images[row[0]]['channels'].append(row[20].rstrip())
-
-
-# Move active channels to the first positions
-FIRST_CHANNELS = {
-    "Donor1": ["CD3-170Er", "CD19-169Tm", "CD324/E-Cadherin-158Gd",
-               "CD206-168Er", "Bcl6-163Dy", "CD141/BDCA3-165Ho",
-               "alphaSMA-141Pr"],
-    "Donor2": ["CD3-170Er", "CD19-169Tm", "CD324/E-Cadherin-158Gd",
-               "CD206-168Er", "Bcl6-163Dy", "CD141/BDCA3-165Ho",
-               "alphaSMA-141Pr"],
-    "DonorA": ["CD3-170Er", "CD19-169Tm", "CD324/E-Cadherin-158Gd",
-               "HistoneH3-176Yb", "collagen14-173Yb", "CD279/PD-1-175Lu",
-               "alphaSMA-141Pr"]
-     }
-for name in images:
-    for channel in reversed(FIRST_CHANNELS[name]):
-        index = images[name]['channels'].index(channel)
-        images[name]['files'].insert(0, images[name]['files'].pop(index))
-        images[name]['channels'].insert(0, images[name]['channels'].pop(index))
-
+        image = images[MAPPING[row[0]]]
+        channel_index = image['channels'].index(row[20].rstrip())
+        image['files'][channel_index] = row[16]
 
 for name in images:
     files = images[name]['files']
@@ -70,12 +68,20 @@ for name in images:
     with open(image_folder + ".pattern", "w") as f:
         f.write(pattern_fullpath + "\n")
 
+    # Check rendering file
+    rendering_file = os.path.join(
+        EXPERIMENT_DIRECTORY, 'rendering_settings', name + '.yml')
+    with open(rendering_file, 'r') as f:
+        d = yaml.load(f)
+        assert d['version'] == 2
+        assert d['greyscale'] is False
+        assert d['channels'].keys() == [i + 1 for i in range(SIZEC)]
+        for i in range(SIZEC):
+            assert d['channels'][i + 1]['label'] == channels[i]
+            assert d['channels'][i + 1]['active'] is (i < 7)
+
 with open(os.path.join(
         EXPERIMENT_DIRECTORY, "idr0054-experimentA-filePaths.tsv"), 'w') as f:
     for name in sorted(images):
         pattern_file = os.path.join(IDR_PATTERNS_DIRECTORY, name + ".pattern")
-        index = name[5]
-        if index == "A":
-            index = 3
-
-        f.write("Dataset:name:Tonsil\t%s\tTonsil %s\n" % (pattern_file, index))
+        f.write("Dataset:name:Tonsil\t%s\t%s\n" % (pattern_file, name))

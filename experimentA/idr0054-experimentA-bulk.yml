@@ -4,7 +4,7 @@ exclude: "clientpath"
 output: "yaml"
 parallel_upload: "5"
 path: "idr0054-experimentA-filePaths.tsv"
-skip: "checksum"
+skip: "all"
 transfer: "ln_s"
 columns:
   - target
