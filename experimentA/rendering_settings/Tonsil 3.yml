@@ -1,0 +1,106 @@
+---
+version: 2
+channels:
+  1:
+    label: CD3-170Er
+    color: FF0000
+    active: true
+    start: 0
+    end: 200
+  2:
+    label: CD19-169Tm
+    color: 00FF00
+    active: true
+    start: 0
+    end: 255
+  3:
+    label: CD324/E-Cadherin-158Gd
+    color: 0000FF
+    active: true
+    start: 0
+    end: 200
+  4:
+    label: HistoneH3-176Yb
+    color: 00FFFF
+    active: true
+    start: 0
+    end: 255
+  5:
+    label: collagen14-173Yb
+    color: FF00FF
+    active: true
+    start: 0
+    end: 200
+  6:
+    label: CD279/PD-1-175Lu
+    color: FFFF00
+    active: true
+    start: 0
+    end: 200
+  7:
+    label: alphaSMA-141Pr
+    color: FFFFFF
+    active: true
+    start: 50
+    end: 255
+  8:
+    active: false
+    label: IL-21-164Dy
+  9:
+    active: false
+    label: CD185/CXCR5-171Yb
+  10:
+    active: false
+    label: CD45-154Sm
+  11:
+    active: false
+    label: CD123-148Nd
+  12:
+    active: false
+    label: CXCL13-157Gd
+  13:
+    active: false
+    label: CD1c/BDCA1-152Sm
+  14:
+    active: false
+    label: avanti-lipid
+  15:
+    active: false
+    label: Foxp3-162Dy
+  16:
+    active: false
+    label: CD45RA-155Gd
+  17:
+    active: false
+    label: Bcl6-163Dy
+  18:
+    active: false
+    label: CD44-153Eu
+  19:
+    active: false
+    label: CTLA4-161Dy
+  20:
+    active: false
+    label: CD8a-146Nd
+  21:
+    active: false
+    label: CD11c-159Tb
+  22:
+    active: false
+    label: Rutenium red
+  23:
+    active: false
+    label: DNA1-191/193Ir
+  24:
+    active: false
+    label: Bcl2-166Er
+  25:
+    active: false
+    label: DNA3-191/193Ir
+  26:
+    active: false
+    label: CD14-156Gd
+  27:
+    active: false
+    label: Ki67-168Er
+greyscale: false
