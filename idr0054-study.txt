@@ -1,0 +1,97 @@
+# FILL IN AS MUCH INFORMATION AS YOU CAN.  HINTS HAVE BEEN PUT IN SOME FIELDS AFTER THE HASH # SYMBOL. REPLACE THE HINT WITH TEXT WHERE APPROPRIATE.				
+				
+# STUDY DESCRIPTION SECTION				
+# Section with generic information about the study including title, description, publication details (if applicable) and contact details				
+				
+Comment[IDR Study Accession]	idr0054			
+Study Title	Imaging Mass Cytometry of human tonsil sections			
+Study Type	imaging mass cytometry 			
+Study Type Term Source REF				
+Study Type Term Accession				
+Study Description	We analysed the in situ localisation of immune cell types in human tonsils using imaging mass cytometry.		 	
+Study Organism	Homo sapiens			
+Study Organism Term Source REF	NCBITaxon			
+Study Organism Term Accession	9606			
+Study Experiments Number	1			
+Study External URL				
+Study Public Release Date				
+				
+# Study Publication				
+Study PubMed ID				
+Study Publication Title	Human lymphoid organ cDC2 and macrophages play complementary roles in the induction of T follicular helper responses	
+Study Author List	Mélanie Durand, Thomas Walter, Tiphène Pirnay, Thomas Naessens, Paul Gueguen, Christel Goudot, Sonia Lameiras, Qing Chang, Nafiseh Talaei, Olga Ornatsky, Tatiana Vassilevskaia, Sylvain Baulande, Sebastian Amigorena, Elodie Segura		
+Study PMC ID				
+Study DOI				
+				
+# Study Contacts				
+Study Person Last Name	Segura			
+Study Person First Name	Elodie			
+Study Person Email	elodie.segura@curie.fr			
+Study Person Address	Institut Curie, 26 rue d'Ulm 75248 Paris cedex 05 France			
+Study Person ORCID	0000-0003-1795-1921			
+Study Person Roles	submitter			
+				
+# Study License and Data DOI				
+Study License	CC-BY 4.0			
+Study License URL	https://creativecommons.org/licenses/by/4.0/			
+Study Copyright	Durand et al.			
+Study Data Publisher	University of Dundee			
+Study Data DOI				
+				
+Term Source Name	NCBITaxon	EFO	CMPO	FBbi
+Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http://www.ebi.ac.uk/cmpo/	http://purl.obolibrary.org/obo/
+				
+				
+# EXPERIMENT SECTION				
+# Experiment Section containing all information relative to each experiment in the study including materials used, protocols names and description, phenotype names and description. For multiple experiments this section should be repeated.  Copy and paste the whole section below and fill out for the next experiment				
+				
+Experiment Number	1			
+Comment[IDR Experiment Name]	idr0054-segura-tonsilhyperion/experimentA			
+Experiment Description	Imaging mass cytometry of tonsil sections 			
+Experiment Size	5D Images: 	Average Image Dimension (XYZCT):	Total Tb: 	
+Experiment Example Images				
+Experiment Imaging Method	imaging mass cytometry			
+Experiment Imaging Method Term Source REF	Fbbi			
+Experiment Imaging Method Term Accession				
+Experiment Comments	3 datasets, corresponding to 3 individual tonsil donors			
+				
+# assay files				
+Experiment Assay File	idr0054-experimentA-assays			
+Experiment Assay File Format	tab-delimited text			
+Assay Experimental Conditions				
+Assay Experimental Conditions Term Source REF				
+Assay Experimental Conditions Term Accession				
+Quality Control Description				
+				
+# Protocols				
+Protocol Name	growth protocol	treatment protocol	image aquistion and feature extraction protocol	data analysis protocol
+Protocol Type	growth protocol	treatment protocol	image aquistion and feature extraction protocol	data analysis protocol
+Protocol Type Term Source REF	EFO	EFO		
+Protocol Type Term Accession	EFO_0003789	EFO_0003969		
+Protocol Description	Human tonsils were fixed in 4% paraformaldehyde, washed with PBS, incubated overnight in 30% sucrose at 4°C, embedded in tissue-tek O.C.T (Sakura) and stored at -80°C. Sections 5 µm in thickness were cut with a Leica CM 1850 UV cryomicrotome (Leica Microsystems).  Sections were stored at _80°C. 	Tissue sections were blocked with 3% Bovine Serum Albumin (BSA) (Rockland) in PBS for 45 min at room temperature. After washing, the slides were incubated with metal-conjugated antibodies in PBS 0.5% BSA. Tissue sections were incubated with the antibody cocktail overnight at 4°C in a humidified chamber, then washed several times in 0.1% Triton X-100 (Thermo Fisher Scientific) in PBS. Slides were rinsed in PBS and stained with DNA intercalator-Ir (Fluidigm, 1:2000 dilution) for 30 min at room temperature. Slides were washed in distilled deionized water and air-dried for approximately 30 min. Slides were inserted into the Hyperion™ Imaging System (Fluidigm) for data acquisition. 	
+				
+# Phenotypes				
+Phenotype Name			
+Phenotype Description			
+Phenotype Score Type				
+Phenotype Term Source REF	CMPO			
+Phenotype Term Name				
+Phenotype Term Accession			 	
+				
+				
+# Feature Level Data Files (give individual file details unless there is one file per well)				
+Feature Level Data File Name				
+Feature Level Data File Format				
+Feature Level Data File Description				
+Feature Level Data Column Name				
+Feature Level Data Column Description				
+				
+#  Processed Data Files 				
+Processed Data File Name				
+Processed Data File Format	tab-delimited text			
+Processed Data File Description				
+Processed Data Column Name	
+Processed Data Column Type				
+Processed Data Column Annotation Level				
+Processed Data Column Description				
+Processed Data Column Link To Assay File			
