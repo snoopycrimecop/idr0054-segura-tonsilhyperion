@@ -18,7 +18,8 @@ Study Public Release Date
 				
 # Study Publication				
 Study PubMed ID				
-Study Publication Title	Human lymphoid organ cDC2 and macrophages play complementary roles in the induction of T follicular helper responses	Study Author List	Mélanie Durand, Thomas Walter, Tiphène Pirnay, Thomas Naessens, Paul Gueguen, Christel Goudot, Sonia Lameiras, Qing Chang, Nafiseh Talaei, Olga Ornatsky, Tatiana Vassilevskaia, Sylvain Baulande, Sebastian Amigorena, Elodie Segura			
+Study Publication Title	Human lymphoid organ cDC2 and macrophages play complementary roles in the induction of T follicular helper responses	
+Study Author List	M√©lanie Durand, Thomas Walter, Tiph√®ne Pirnay, Thomas Naessens, Paul Gueguen, Christel Goudot, Sonia Lameiras, Qing Chang, Nafiseh Talaei, Olga Ornatsky, Tatiana Vassilevskaia, Sylvain Baulande, Sebastian Amigorena, Elodie Segura		
 Study PMC ID				
 Study DOI				
 				
@@ -67,7 +68,7 @@ Protocol Name	growth protocol	treatment protocol	image aquistion and feature ext
 Protocol Type	growth protocol	treatment protocol	image aquistion and feature extraction protocol	data analysis protocol
 Protocol Type Term Source REF	EFO	EFO		
 Protocol Type Term Accession	EFO_0003789	EFO_0003969		
-Protocol Description	Human tonsils were fixed in 4% paraformaldehyde, washed with PBS, incubated overnight in 30% sucrose at 4°C, embedded in tissue-tek O.C.T (Sakura) and stored at -80°C. Sections 5 µm in thickness were cut with a Leica CM 1850 UV cryomicrotome (Leica Microsystems).  Sections were stored at _80°C. 	Tissue sections were blocked with 3% Bovine Serum Albumin (BSA) (Rockland) in PBS for 45 min at room temperature. After washing, the slides were incubated with metal-conjugated antibodies in PBS 0.5% BSA. Tissue sections were incubated with the antibody cocktail overnight at 4°C in a humidified chamber, then washed several times in 0.1% Triton X-100 (Thermo Fisher Scientific) in PBS. Slides were rinsed in PBS and stained with DNA intercalator-Ir (Fluidigm, 1:2000 dilution) for 30 min at room temperature. Slides were washed in distilled deionized water and air-dried for approximately 30 min. Slides were inserted into the Hyperion™ Imaging System (Fluidigm) for data acquisition. 	
+Protocol Description	Human tonsils were fixed in 4% paraformaldehyde, washed with PBS, incubated overnight in 30% sucrose at 4¬∞C, embedded in tissue-tek O.C.T (Sakura) and stored at -80¬∞C. Sections 5 ¬µm in thickness were cut with a Leica CM 1850 UV cryomicrotome (Leica Microsystems).  Sections were stored at _80¬∞C. 	Tissue sections were blocked with 3% Bovine Serum Albumin (BSA) (Rockland) in PBS for 45 min at room temperature. After washing, the slides were incubated with metal-conjugated antibodies in PBS 0.5% BSA. Tissue sections were incubated with the antibody cocktail overnight at 4¬∞C in a humidified chamber, then washed several times in 0.1% Triton X-100 (Thermo Fisher Scientific) in PBS. Slides were rinsed in PBS and stained with DNA intercalator-Ir (Fluidigm, 1:2000 dilution) for 30 min at room temperature. Slides were washed in distilled deionized water and air-dried for approximately 30 min. Slides were inserted into the Hyperion‚Ñ¢ Imaging System (Fluidigm) for data acquisition. 	
 				
 # Phenotypes				
 Phenotype Name			
