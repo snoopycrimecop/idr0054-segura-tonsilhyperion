@@ -24,9 +24,6 @@ columns:
   - name: Characteristics [Organ]
     clientname: Organ
     include: yes
-  - name: Channels
-    clientname: Channels
-    include: yes
 
   ######################################################################
   # mapr groups
