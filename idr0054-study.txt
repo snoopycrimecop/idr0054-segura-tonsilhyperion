@@ -18,11 +18,11 @@ Study BioStudies Accession	S-BSST221
 Study Public Release Date				
 				
 # Study Publication				
-Study PubMed ID				
+Study PubMed ID	31072818			
 Study Publication Title	Human lymphoid organ cDC2 and macrophages play complementary roles in the induction of T follicular helper responses	
 Study Author List	Mélanie Durand, Thomas Walter, Tiphène Pirnay, Thomas Naessens, Paul Gueguen, Christel Goudot, Sonia Lameiras, Qing Chang, Nafiseh Talaei, Olga Ornatsky, Tatiana Vassilevskaia, Sylvain Baulande, Sebastian Amigorena, Elodie Segura		
 Study PMC ID				
-Study DOI				
+Study DOI	https://doi.org/10.1084/jem.20181994			
 				
 # Study Contacts				
 Study Person Last Name	Segura			
