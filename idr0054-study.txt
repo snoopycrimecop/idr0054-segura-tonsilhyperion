@@ -4,10 +4,10 @@
 # Section with generic information about the study including title, description, publication details (if applicable) and contact details				
 				
 Comment[IDR Study Accession]	idr0054			
-Study Title	Imaging Mass Cytometry of human tonsil sections			
-Study Type	imaging mass cytometry 			
-Study Type Term Source REF				
-Study Type Term Accession				
+Study Title	Imaging Mass Cytometry of human tonsil sections		
+Study Type	image cytometry 			
+Study Type Term Source REF	OMIT			
+Study Type Term Accession	OMIT_0019157			
 Study Description	We analysed the in situ localisation of immune cell types in human tonsils using imaging mass cytometry.		 	
 Study Organism	Homo sapiens			
 Study Organism Term Source REF	NCBITaxon			
@@ -18,11 +18,11 @@ Study BioStudies Accession	S-BSST221
 Study Public Release Date				
 				
 # Study Publication				
-Study PubMed ID				
+Study PubMed ID	31072818			
 Study Publication Title	Human lymphoid organ cDC2 and macrophages play complementary roles in the induction of T follicular helper responses	
 Study Author List	Mélanie Durand, Thomas Walter, Tiphène Pirnay, Thomas Naessens, Paul Gueguen, Christel Goudot, Sonia Lameiras, Qing Chang, Nafiseh Talaei, Olga Ornatsky, Tatiana Vassilevskaia, Sylvain Baulande, Sebastian Amigorena, Elodie Segura		
 Study PMC ID				
-Study DOI				
+Study DOI	https://doi.org/10.1084/jem.20181994			
 				
 # Study Contacts				
 Study Person Last Name	Segura			
@@ -47,7 +47,8 @@ Term Source URI	http://purl.obolibrary.org/obo/	http://www.ebi.ac.uk/efo/	http:/
 # Experiment Section containing all information relative to each experiment in the study including materials used, protocols names and description, phenotype names and description. For multiple experiments this section should be repeated.  Copy and paste the whole section below and fill out for the next experiment				
 				
 Experiment Number	1			
-Comment[IDR Experiment Name]	idr0054-segura-tonsilhyperion/experimentA			
+Comment[IDR Experiment Name]	idr0054-segura-tonsilhyperion/experimentA
+Experiment Sample Type	tissue				
 Experiment Description	Imaging mass cytometry of tonsil sections 			
 Experiment Size	5D Images: 	Average Image Dimension (XYZCT):	Total Tb: 	
 Experiment Example Images				
